@@ -1,6 +1,6 @@
 package co.istad.banking;
 
-public class SavingAccount extends Account {
+public class SavingAccount extends Account{
     private Double interest; //កាប្រាក់
     private Interest i;
 
@@ -8,15 +8,10 @@ public class SavingAccount extends Account {
         this.i = i;
     }
 
-    public Double getInterest() {
-        return interest;
-    }
-    public void calculateInterest(){
-       this.interest= i. calculate(getBalance());
-    }
 
-    public void setInterest(Interest i) {
-        this.i=i;
+
+    public void setInterest(Double interest) {
+        this.interest = interest;
 
     }
 
@@ -25,8 +20,9 @@ public class SavingAccount extends Account {
 
     }
 
+
     public SavingAccount(){
-        setInterest(new Interest(){
+        setI(new Interest(){
             @Override
             public double calculate(Double amount) {
                 return amount*0.002;
@@ -34,6 +30,13 @@ public class SavingAccount extends Account {
         });
 
     }
+    public Double getInterest() {
+        return interest;
+    }
+    public void calculateInterest(){
+        interest= i. calculate(1000.0);
+    }
+
 
     @Override
     protected void showBalance() {
@@ -49,6 +52,7 @@ public class SavingAccount extends Account {
 
     }
 
-
-
+    public double calculate(Double amount) {
+        return 0;
+    }
 }

@@ -20,7 +20,7 @@ public class Database {
         return creditAccount;
     }
     public static SavingAccount savingAccount(){
-        SavingAccount savingAccount = new SavingAccount(168,"Setha",1000.0);
+        SavingAccount savingAccount = new SavingAccount(168,"Setha",10000.0);
 
 
         return savingAccount;

@@ -45,6 +45,7 @@ public class BankingMain {
         SavingAccount mySavingAcc = new SavingAccount();
         mySavingAcc.setI(new UsdRate());
         mySavingAcc.calculateInterest();
-        System.out.println("the interest is : "+mySavingAcc.getInterest());
+        System.out.println("|||||||||||||||||||||||||||||||||||||||||||||");
+        System.out.println("Usd interest is : "+mySavingAcc.getInterest());
     }
 }
